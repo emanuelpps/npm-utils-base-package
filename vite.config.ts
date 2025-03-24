@@ -10,4 +10,9 @@ export default defineConfig({
     },
   },
   plugins: [dts({ outDir: "dist" })],
+  resolve: {
+    alias: {
+      "@src": resolve(__dirname, "/src"),
+    },
+  },
 });
